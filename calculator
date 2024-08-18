@@ -1,0 +1,37 @@
+def add(a,b):
+    print(a+b)
+def sub(a,b):
+    print(a-b)
+def multi(a,b):
+    print(a*b)
+def division(a,b):
+    if b == 0 :
+        print("error! '0' is not divided ")
+    else:
+        print(a/b)
+
+        
+print("--- chooce you option ---")
+print("1.addition")
+print("2.substrection")
+print("3.multiplication")
+print("4.division")
+
+while True:
+    choices = ('1','2','3','4')
+    choice = input("enter you choice : ")
+    if choice in choices:
+        fn = int(input("enter you first number : "))
+        sn = int(input("enter you secund number : "))
+        if choice=='1':
+            print(add(fn,sn))
+        elif choice == '2':
+            print(sub(fn,sn))
+        elif choice == '3':
+            print(multi(fn,sn))
+        elif choice == '4':
+            print(division(fn,sn))
+        else:
+            print("opretion faild !")
+    else:
+        print("plz chooce corect choice, --> 'try again'")
